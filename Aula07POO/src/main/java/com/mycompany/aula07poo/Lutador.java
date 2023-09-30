@@ -8,7 +8,7 @@ package com.mycompany.aula07poo;
  *
  * @author ester
  */
-p   public class Lutador {
+    public class Lutador {
     private String nome;
     private String nacionalidade;
     private int idade;
@@ -23,11 +23,23 @@ p   public class Lutador {
         this.nacionalidade = na;
         this. idade = id;
         this. altura = al;
-        this.peso = this.setPeso (pe);
+        this.peso = (this.setPeso(pe));
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
     }
     
+    public String getNome (){
+        return nome;
+    }
     
+    public void setNome(String no){
+        nome = no;
+    }
+    
+    public String getNacionalidade(){
+        return nacionalidade;
+    }
+    
+    public void setNacionalidade 
 }
