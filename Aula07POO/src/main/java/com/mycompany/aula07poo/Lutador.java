@@ -23,7 +23,7 @@ package com.mycompany.aula07poo;
         this.nacionalidade = na;
         this. idade = id;
         this. altura = al;
-        this.peso = (this.setPeso(pe));
+        this.peso = pe;
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
@@ -41,5 +41,76 @@ package com.mycompany.aula07poo;
         return nacionalidade;
     }
     
-    public void setNacionalidade 
-}
+    public void setNacionalidade (String na) {
+        nacionalidade = na;
+    }
+    
+    public int getIdade (){
+        return idade;
+    }
+    
+    public void setIdade (int id){
+        idade = id;
+    }
+    
+    public float getAltura(){
+        return altura;
+    }
+    
+    public void setAltura (float al){
+        altura = al;
+    }
+    
+    public float getPeso (){
+        return peso;
+    }
+    
+    public void setPeso (String pe){
+        peso = pe;
+        setCategoria();
+    }
+    
+    public String getCategoria (){
+        return categoria;
+    }
+    
+    public void setCategoria (){
+        if (peso < 52.2) {
+            categoria = "Inválido"; 
+            else if (peso  <= 70.3){
+              categoria = "Leve";
+              else if (peso <= 83.9){
+                categoria = "Médio";
+                else if (peso  <= 120.2){
+                    categoria = "Pesado";
+                    }
+                }
+            }
+        }
+    }
+    
+    public int getVitorias(){
+        return vitorias;
+    }
+    
+    public void setVitorias(int vi){
+        vitorias = vi;
+    }
+    
+    public int getDerrotas(){
+        return derrotas;
+    }
+    
+    public void setDerrotas (int de){
+        derrotas = de;
+    }
+    
+    public int getEmpates(){
+        return empates;
+    }
+    
+    public void setEmpates (int em){
+        empates = em;
+    }
+}   
+
