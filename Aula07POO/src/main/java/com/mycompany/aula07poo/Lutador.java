@@ -4,6 +4,9 @@
  */
 package com.mycompany.aula07poo;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *
  * @author ester
@@ -83,6 +86,9 @@ package com.mycompany.aula07poo;
                 categoria = "Médio";
                 else if (peso  <= 120.2){
                     categoria = "Pesado";
+                    else {
+                        categoria = "Inválido";
+                        }
                     }
                 }
             }
@@ -111,6 +117,37 @@ package com.mycompany.aula07poo;
     
     public void setEmpates (int em){
         empates = em;
+    }
+    
+    public void ganharLuta(){
+        this.setVitorias (this.getVitorias () + 1);
+    }
+    
+    public void perderLuta(){
+        this.setDerrotas (this.getDerrotas () + 1);
+    }
+    
+    public void empatarLuta(){
+        this.setEmpates (this.getEmpates () + 1);
+    }
+    
+    public void apresentar(){
+        System.out.println("Lutador: " + this.getNome());
+        System.out.println("Origem: " + this.getNacionalidade());
+        System.out.println(this.getIdade() + "anos");
+        System.out.println(this.getAltura() + "m de altura");
+        System.out.println("Pesando: " + this.getPeso());
+        System.out.println("Ganhou: " + this.getVitorias());
+        System.out.println("Perdeu: " + this.getDerrotas());
+        System.out.println("Empatou: " + this.getEmpates());
+    }
+    
+    public void status(){
+        System.out.println(this.getNome());
+        System.out.println("É um peso " + this.getCategoria());
+        System.out.println(this.getVitorias() + " vitórias");
+        System.out.println(this.getDerrotas() + " derrotas");
+        System.out.println(this.getEmpates() + " empates");
     }
 }   
 
