@@ -33,7 +33,12 @@ public class Aula07POO {
         105.7f, 12, 2, 4);
         
         
-        l[3].apresentar();
-        //l.status();
+        Luta MMA01 = new Luta();
+        MMA01.marcarLuta(l[0], l[1]);
+        MMA01.lutar();
+        
+        
+        l[0].status();
+        l[1].status();
     }
 }
