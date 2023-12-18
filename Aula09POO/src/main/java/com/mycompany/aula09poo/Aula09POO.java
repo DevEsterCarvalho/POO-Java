@@ -24,5 +24,7 @@ public class Aula09POO {
         
         l[0].abrir();
         l[0].folhear(100);
+        l[0].avancarPag();
+        System.out.println(l[0].detalhes());
     }
 }
