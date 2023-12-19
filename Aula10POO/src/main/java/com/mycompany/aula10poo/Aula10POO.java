@@ -26,10 +26,19 @@ public class Aula10POO {
         p3.setSalario (2500.75f);
         p4.setSetor ("Estoque");
         
+        p1.setIdade (30);
+        p2.setIdade (22);
+        p3.setSexo ("M");
+        p4.setSexo ("F");
+        
         //p1.receberAumento ("550.20");
         //p2.mudarTrabalho ();
         //p4.cancelarMatricula();
         
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        System.out.println(p4.toString());
         
     }
 }
