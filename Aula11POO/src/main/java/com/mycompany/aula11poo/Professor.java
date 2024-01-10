@@ -4,10 +4,30 @@
  */
 package com.mycompany.aula11poo;
 
-/**
- *
- * @author ester
- */
-public class Professor {
+
+public class Professor extends Pessoa {
+    private String especialidade;
+    private float salario;
     
+    public void receberAumento(){
+        this.salario++;
+    }
+    
+    public void setEspecialidade (String especialidade){
+        this.especialidade = especialidade;
+    }
+    
+    public String getEspecialidade (){
+        return especialidade;
+    }
+    
+    public void setSalario (float salario){
+        this.salario = salario;
+    }
+    
+    public float getSalario (){
+        return salario;
+    }
 }
+
+
