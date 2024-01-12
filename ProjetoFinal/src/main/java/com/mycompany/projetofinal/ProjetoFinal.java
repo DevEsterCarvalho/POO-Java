@@ -22,9 +22,12 @@ public class ProjetoFinal {
         a[1] = new Aluno ("Creuza", 12, "F", "creuza 1",0); 
         
         Visualizacao vis [] = new Visualizacao[5];
-        vis[0] = new Visualizacao (a[0], v[2]);
+        vis[0] = new Visualizacao (a[0], v[2]); // aluna Ester assiste Java-POO
+        vis[0].avaliar();
         System.out.println(vis[0].toString());
-        vis[1] = new Visualizacao (a[0], v[1]);
+        
+        vis[1] = new Visualizacao (a[0], v[1]); // aluna Ester assiste Java
+        vis[0].avaliar(35.0f);
         System.out.println(vis[0].toString());
         
         /*System.out.println(v[0].toString());
