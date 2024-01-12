@@ -5,7 +5,7 @@ package com.mycompany.aula12poo;
 public class Aula12POO {
 
     public static void main(String[] args) {
-        Mamifero m = new Mamifero();
+        /*Mamifero m = new Mamifero();
         Reptil r = new Reptil();
         Peixe p = new Peixe();
         Ave a = new Ave();
@@ -15,23 +15,25 @@ public class Aula12POO {
         Tartaruga t = new Tartaruga();
         Arara l = new Arara //l lory (variedade de papagaio inglês
         GoldFish g = new GoldFish();
+        m.setPeso(35.3f);
+        m.setCorPelo ("Marrom");
+        m.alimentar();
+        m.locomover();
+     
+        r.locomover();
+        p.locomover();
+        a.locomover();
+        g.locomover();
+        l.fazerNinho();
+        g.Alimentar();
+        t.locomover();
+        d.emitirSom(); 
+        c.locomover();
+        s.alimentar();*/
         
-     
-     m.setPeso(35.3f);
-     m.setCorPelo ("Marrom");
-     m.alimentar();
-     m.locomover();
-     
-     r.locomover();
-     p.locomover();
-     a.locomover();
-     g.locomover();
-     l.fazerNinho();
-     g.Alimentar();
-     t.locomover();
-     d.emitirSom(); 
-     c.locomover();
-     s.alimentar();
-     
+        Cachorro d = new Cachorro(); // d dog
+        d.reagir (2, 12.5f);
+        d.reagir(17, 4.5f);
+        d.reagir(true);
     }
 }
